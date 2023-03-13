@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, memo } from "react";
 
 let renderCount = 1;
 
@@ -21,4 +21,4 @@ const Component = ({ data }) => {
   );
 };
 
-export default Component;
+export default memo(Component);
